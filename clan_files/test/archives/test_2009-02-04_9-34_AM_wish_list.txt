@@ -1,0 +1,50 @@
+player name,I don't want nuthin,Ol' Scratch's ash can,Ol' Scratch's ol' britches,Ol' Scratch's stovepipe hat,Ol' Scratch's infernal pitchfork,Ol' Scratch's manacles,Ol' Scratch's stove door,Frosty's old silk hat,Frosty's nailbat,Frosty's carrot,Frosty's iceball,Frosty's arm,Frosty's snowball sack,Oscus's dumpster waders,Oscus's flypaper pants,Oscus's garbage can lid,Oscus's neverending soda,Oscus's pelt,Wand of Oscus,Zombo's empty eye,Zombo's grievous greaves,Zombo's shield,Zombo's shoulder blade,Zombo's skull ring,Zombo's skullcap,Chester's Aquarius medallion,Chester's bag of candy,Chester's cutoffs,Chester's moustache,Chester's muscle shirt,Chester's sunglasses,Hodgman's bow tie,Hodgman's porkpie hat,Hodgman's lobsterskin pants,Hodgman's almanac,Hodgman's lucky sock,Hodgman's metal detector,Hodgman's varcolac paw,Hodgman's harmonica,Hodgman's garbage sticker,Hodgman's cane,Hodgman's whackin' stick,Hodgman's disgusting technicolor overcoat,Hodgman's imaginary hamster
+<outfit indicator>,,sc,sc,sc,,,,f,f,f,,,,o,,,,o,o,,z,z,,,z,,c,c,c,,,h,h,h
+Panama Joe,,H,H,W,H,H,H,H,H,H,H,H,H,H,W,H,W,H,H,H,H,H,W,W,H,H,H,H,H,W,W,H,H,H,H,W,W,H,H,H,W,W,H,H
+Czuki Czyzz,,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+betafox,,H,H,H,H,H,W,H,H,H,H,W1,H,,,,H,W2,H,H,W,W,W,W,W,H,H,H,,H,,H,H,H,W,W,W,W,W,W,W,W,H,W
+thing4,,,,,,,,,,,,,,,,,H,,,,,,,,,,,,,W,,W,W,H,,W,H
+halfpenny,,W,W,W,W,W,H,H,H,W,H,H,W,W,H,W,W,W,W,W,W,W,H,W,H,W,W,H,W,W,W,W1,W1,W1,W,W,W,W,W,W,W,W,W,W
+Lester22,,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,H,W,W,W,W,W,W,W,W,W,H,W
+BatBrat,,,,,,,,,,,,,,,W,,,,,,,,,,,,W,W,W,W,W
+Marice,,H,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+Randomlord,,,H,W,W,W,W,H,H,W,,W,,W,W,W,W,W,W,W,W3,W2,W1,W,W4,H,,W,W,W5,W,H,W,W,W,W,W,W,W,W,W,W,W,W
+ShaBob,,W,H,W,W,W,W,,,,,,,,,,,,,,,,,,,,,,,,,W,W,W,W,W,W,W,W,W,W,W,W,W
+apenny,,W,H,H,W,W,W,H,W,W,H,W,W,H,W,W,H,H,H,W,W,W,W,W,W,H,H,W,W,W,W,H,H,H,H,W,H,W,W,W,W,W,W,W
+garnet,*
+pyrites,*
+OzoneB,,H,W,W,W,H,W,H,W,W,W,W3,H,W,H,W,H,W2,H,H,H,H,H,W,W,W,H,H,H,H,H,H,H,H,W,H,H,H,W,H,W,W,W4,W1
+Roert,,W,W,W,W,W,W,W,W,H,W,W4,H,W,W,W,W,W,W,W,W,W,W,H,H,W,W,W,W,W,H,W3,H,H,W,W2,H,W,W,W1,W,W,W,W
+holycowWTF,,W,W,W,W,W,W,W,W,W,W,W,W,W,H,W,W,W,W,W,W,W,H,H,W,H,W,W,W,H,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+Aurum Drake,*
+Argent Drake,,H,H,H,W,W,W,H,H,H,W,W,H,H,W2,W3,W,H,W,H,W6,W7,H,W1,W8,W,W,W,H,H,W,W4,H,W5,W,W,W,W,W,W,W,W,W,W
+Sven,,W,W,W,W,W,W,W,W,W,W,H,W,W2,W,W,W,H,W3,W,H,H,W,W,W1,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+frogprince,,,,,,,,,,,,W5,,,,,,,,,,,,,,,,,,W4,,,,,,,,,W3,,,W1,,W2
+hermetic,,,,,,,,,,,,,,,,,,,,,,,,,,W5,,,,,,,,,,,,,W4,,,W2,W1,W3
+parkieboy,,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W3,W2,W1
+Wole,,W,W,W,W,H,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W1,W2,W3,W,W,W,W,W,H,W,W,W,W
+Ghwerig,,W,W,W,W,W,W,H,W,H,W,W,H,H,W,W,W,H,H,W,W,H,W,W,W,W,H,H,W,W,W,H,W,W,H,W,W,W,W,W,W,W,W,W
+karneval,,W,W,W,H,W,W,W,W,H,W,H,W,W,W,W,W,W,H,W,H,W,W,W,H,W,W,W,W,W3,W,H,H,W1,W,W,W,W,W,W,W,W,W,W2
+GJB,,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+PantokratorMC,,H,H,H,W,H,W,H,H,H,H,W,H,H,H,W,H,H,H,W,H,H,H,W4,H,H,H,W3,H,W2,H,H,H,H,H,H,H,H,H,H,H,W1,H,H
+Fig Bucket,,W,W4,H,W,W4,W,W4,H,W4,W,W1,W2,W4,W,W,W3,W4,W4,W,W4,H,W4,W4,W,W,W4,H,H,W,W,W4,W4,W4,H,W4,W4,W4,H,W,W,W1,W1,W1
+Urbanoutdoorsman,,W,W,W,W,W,W,W,W,W,W,H,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,H,W,W,W2,H,H,W,W1,W,W,W,W,W3,W,W,W
+Grog the Silly
+Boccolotti,,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W7,W6,W5,H,W4,W8,W,W,W10,W9,W3,W2,W1
+Bourguignonne,,H,H,H,H,H,H,H,W,W,H,W,W,H,H,H,W6,H,H,H,W,W,W,W7,W,H,H,H,H,W,W,H,H,H,H,W4,W5,W,H,H,H,W3,W2,W1
+bigcalm,,H,H,H,H,W,H,H,W,W,W,H,W,H,H,W,W,H,H,H,W,H,W,W,W,H,W,W,H,W,W,H,H,H,W,H,W,W,W,H,W,W,W,H
+thing2,,H,H,H,H2,W,H,H,H,H,H,H,H,H,W,H,H,H,H,H,H,H3,H,H,H2,W,H3,H,H,H,W,H,H,H,W,W3,H,H,H,H,H,W2,H,W1
+Selkielass,,,H,,H,,,,,,,,,,,,,,H,,,,,H,H,w10,w9,w11,w13,w8,w9,w1,w2,w3,w,w4,w5,w,H,w6,w7,w,H,w
+Stinksap,,h,h,h,h,h,h,h,h,h,h,W1,h,h,w,h,w,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,w
+BmR,,H,H,H,W,H,W,H,W,H,W,H,W,H,W,W,W,H,H,W,W,H,W,W,W,W,W,H,H,W,W,H,H,H,W,W3,W2,W,W,H,W4,W1,W,W
+Lotta Potz,,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,W6,H,H,H,H,H,H,H,H,H,H,H,H,W5,H,H,W4,H,W1,W2,W3
+SuperLuigi,,W,H,W,W,W,W,W,W,W,W,W5,W5,W,W,W,W3,W,W,W2,W,W,W,W,H,W,W4,W,W6,W5,W,W1,W1,W1,W1,W1,W1,W1,W1,W1,W1,W1,W1,W1
+man tater,,W,h,h,W,h,W,h,h,h,W,W1,h,h,h,W,W,W2,h,W,h,h,h,W,h,W,h,h,h,W,h,h,h,h,W,W,W3,W,W,W,h,W,W,W
+TyphoidMary,,H,H,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,H,W,W,W,H,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+Starker,,W,W3,W1,W,W1,H,W,W,W3,W,W,W,W3,W,W,W,W,W,W,W3,W2,W,W2,W,W,W,W3,W,W1,W1,W1,W1,W1,W,W,W,W,W,H,W,W1,W,W
+ehempel,,H,H,H,H,,,H,,H,H,W2,H,W3,H,W,W,W,W,H,W,W,H,W,W,W,W,W,H,W,W,H,H,H,W,H,H,H,W,W1,W,W1,W1,W2
+azure drake,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,W,W,W,,W,,,,W1,,,,W
+
+
+WoodOwl,,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W,W
+punchee,,H,H,H,W,H,W,W,H,W,W,W,H,W,W,W,W,W,W,W,W,W,W,W,W,W,H,W,H,W,W,H,W,W,W,W,W,W,H,W,W,W,W,W
