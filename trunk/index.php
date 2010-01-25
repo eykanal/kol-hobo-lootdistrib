@@ -34,22 +34,8 @@ if( file_exists( CLAN_FILES.'/'.$clan_name ) )
 	echo "talk to AlphaCow";
 }
 
-
-switch( $_POST['submit'] )
-{
-	//
-	// SET ACTION VALUES
-	//
-	case 'Save changes':
-		break;
-	
-	//
-	// FIRST VISIT:
-	//
-	default:
-
-		$smarty->display( 'form.tpl' );
-		break;
-}
+// default action; show the form, can set up more later
+$display = 'form.tpl';
+$smarty->display( $display );
 
 ?>
