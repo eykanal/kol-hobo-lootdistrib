@@ -42,7 +42,7 @@ function move_array_item_to_front( $array, $item )
 	
 	$key = array_search( $item, $array );
 	
-	if( $key >= 0 )
+	if( is_numeric( $key ) && $key >= 0 )
 	{
 		$holder = $array[$key];
 		$array[$key] = false;
@@ -87,7 +87,7 @@ function process_loot( $loot_raw )
 	{
 		preg_match( '/((Frosty|Hodgman|Oscus|Chester|Zombo|Ol|Wand).*?)(\s*Ac|\sto)/', $line, $loot_parsed );
 	
-		strlen( $loot_parsed[1] ) > 0 ? $loot[] = trim( stripslashes( $loot_parsed[1] ) ) : '';
+		count( $loot_parsed ) > 0 ? $loot[] = trim( stripslashes( $loot_parsed[1] ) ) : '';
 	}
 	
 	return $loot;
@@ -113,7 +113,7 @@ function suggest_loot( $divers, $loot )
 	$pieces_of_loot = count( $loot );
 	$first_run = true;		// used to determine whether first run through diver list		
 	$all_loot = $loot;
-	if( !$min_adv_requirement ) $min_adv_requirement = 0;
+	if( !isset( $min_adv_requirement ) ) $min_adv_requirement = 0;
 	
 	// loop through this until either all loot is gone or until the loot list looks the same (i.e.,
 	// no one wants the remaining loot).

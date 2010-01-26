@@ -320,7 +320,7 @@ class Clan extends Files
 
 						if( strlen( $entry_parsed[1] ) > 0 )
 						{
-							$want_loot_ranked[$entry_parsed[1]] = array_merge( (array)$want_loot_ranked[$entry_parsed[1]], (array)$current_loot_piece );
+							$want_loot_ranked[$entry_parsed[1]] = @array_merge( (array)$want_loot_ranked[$entry_parsed[1]], (array)$current_loot_piece );
 
 						// if no ranking, just stick it on the end of the array
 						} else
