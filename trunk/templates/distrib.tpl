@@ -1,6 +1,6 @@
 {include file='header.tpl'}
 
-<form action='process.php' method='post'>
+<form action='processDistrib.php' method='post'>
 <div id='floater'>
 	<p>Please review the suggestions below and click the "Looks good" button when ready.</p>
 	<table>
