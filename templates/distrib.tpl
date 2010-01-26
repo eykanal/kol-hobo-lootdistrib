@@ -6,8 +6,8 @@
 	<table>
 {section name=n loop=$loot_results}
 		<tr>
-			<td class='loot'><img src='lootImages/{$loot_results[n].loot|regex_replace:"/\'/":""|regex_replace:"/ /":"_"|lower}.gif' alt="{$loot_results[n].loot}" title="{$loot_results[n].loot}" class='loot_item'></td>
-			<td class='name'><select name="{$loot_results[n].loot}">{section name=m loop=$loot}{if $loot[m]->throughSewer}<option value='{$loot[m]->name}'{if $loot[m]->name==$loot_results[n].name} selected{/if}>{$loot[m]->name}{if $loot[m]->name==$loot_results[n].name} (suggested){/if}</option>{/if}{/section}</select></td>
+			<td class='loot'><img src='lootImages/{$loot_results[n].loot_clean}.gif' alt="{$loot_results[n].loot_raw}" title="{$loot_results[n].loot_raw}" class='loot_item'></td>
+			<td class='name'><select name="{$loot_results[n].loot_clean}">{section name=m loop=$loot}{if $loot[m]->throughSewer}<option value='{$loot[m]->name}'{if $loot[m]->name==$loot_results[n].name} selected{/if}>{$loot[m]->name}{if $loot[m]->name==$loot_results[n].name} (suggested){/if}</option>{/if}{/section}</select></td>
 		</tr>
 {/section}
 	</table>
