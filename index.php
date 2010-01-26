@@ -12,11 +12,11 @@ if( file_exists( CLAN_FILES.'/'.$clan_name ) )
 	$_SESSION['clan_name'] = $clan_name;
 
 	// instantiate clan class
-	$_SESSION['clan'] = new Clan( CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_actions.txt', CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_divers.txt' );
+	$clan = new Clan( CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_actions.txt', CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_divers.txt' );
 
 	// set up some universal smarty variables
-	$smarty->assign( 'divers', $_SESSION['clan']->divers );
-	$smarty->assign( 'actions', $_SESSION['clan']->actions );
+	$smarty->assign( 'divers', $clan->divers );
+	$smarty->assign( 'actions', $clan->actions );
 	$smarty->assign( 'form_action_self', $_SERVER['PHP_SELF'] );
 
 // if no files, check in old spot
