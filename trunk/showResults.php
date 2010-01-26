@@ -47,30 +47,29 @@ if( $_POST['submit'] == 'Show me the loot!' )
 			}
 		}
 		
-		// parse log, wish list, & loot
-		$_SESSION['clan']->ProcessLog( $log_raw );
-		$_SESSION['clan']->ProcessWishList( $wish_list_raw );
-		$loot = process_loot( $loot_raw );
-		$results = suggest_loot( $_SESSION['clan']->divers, $loot );
+		// load clan, parse log, wish list, & loot
+		$clan = new Clan( CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_actions.txt', CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_divers.txt' );
 
-		$_SESSION['clan']->divers = $results[0];
+		$clan->ProcessLog( $log_raw );
+		$clan->ProcessWishList( $wish_list_raw );
+		$loot = process_loot( $loot_raw );
+		$results = suggest_loot( $clan->divers, $loot );
+
+		$clan->divers = $results[0];
 		$loot = $results[1];
 
 		// format loot so it's loot-centric rather than diver-centric
 		$loot_results = array();
-		foreach( $_SESSION['clan']->divers as $diver )
-		{
+		foreach( $clan->divers as $diver )
 			if( $diver->gotSomething )
-			{
 				foreach( $diver->lootResults as $piece_of_loot )
-				{
-					$loot_results[] = array( 'loot'=>$piece_of_loot, 'name'=>$diver->name );
-				}
-			}
-		}
+					$loot_results[] = array( 'loot_raw'	  => $piece_of_loot,
+											 'loot_clean' => strtolower( str_replace( "'", "", str_replace( " ", "_", $piece_of_loot ) ) ),
+											 'name'		  => $diver->name,
+									  );
 
 		$template_divers = array();
-		foreach( $_SESSION['clan']->divers as $diver )
+		foreach( $clan->divers as $diver )
 			if( $diver->inDungeon )
 				$template_divers[] = $diver;
 
