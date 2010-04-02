@@ -1,12 +1,12 @@
 <?php
 
-if( !IN_PROG )
+if( !defined( 'IN_PROG' ) )
 	die( 'Not on my watch, buster.' );
 
 // This class contains some basic clan information, as well as all the people in the clan.
 class Clan extends Files
 {
-	public $actions;		// textfile containing rows with the following columns
+	public $actions;		// array (from textfile) containing rows with the following columns:
 							//	0) unique numeric identifier for each entry
 							//	1) action name as written on erikdev frontpage (not used, use singular instead)
 							//	2) action name, singular
@@ -15,10 +15,13 @@ class Clan extends Files
 							//	5) location in dungeon (sewer, BBB, etc)
 							//	6) beyond sewer action (1 = yes, 0 = no)
 							//	7) maximum number of points (only really applicable for Richard)
-	public $divers;			// textfile with the following columns
+	public $divers;			// array (from textfile) with the following columns:
 							//	0) name
 							//	1) total saved turncount
 							//	2) last active date
+	public $distribResults;	// array (either from processDistrib.php or from textfile)
+							//  0) name
+							//
 	
 	private $actionFile;	// name of textfile storing actions
 	private $diverFile;		// string containing name of diver file
@@ -100,14 +103,10 @@ class Clan extends Files
 	{
 		// validate input
 		foreach( $newActions as $key=>$action )
-		{
 			if( !is_numeric( $key ) || !is_numeric( $action ) ) return false;
-		}
 		
 		foreach( $richards as $key=>$action )
-		{
 			if( !is_numeric( $key ) || !is_numeric( $action ) ) return false;		
-		}
 		
 		// make the changes
 		$changed_actions = array_keys( $newActions );

@@ -1,6 +1,6 @@
 <?php
 
-if( !IN_PROG )
+if( !defined( 'IN_PROG' ) )
 	die( 'Not on my watch, buster.' );
 
 class Diver
