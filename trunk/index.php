@@ -11,8 +11,13 @@ if( file_exists( CLAN_FILES.'/'.$clan_name ) )
 	// add clan name to session, enabling access to later pages
 	$_SESSION['clan_name'] = $clan_name;
 
+	// force reload of $clan when visiting index
+	if( isset( $_SESSION['clan'] ) )
+		unset( $_SESSION['clan'] );
 	// instantiate clan class
-	$clan = new Clan( CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_actions.txt', CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_divers.txt' );
+	$_SESSION['clan'] = new Clan( $_SESSION['clan_name'] );
+	// rename var for easy access; NOTE THAT $clan IS A REFERENCE TO $_SESSION['clan']
+	$clan = $_SESSION['clan'];
 
 	// set up some universal smarty variables
 	$smarty->assign( 'divers', $clan->divers );
