@@ -48,8 +48,9 @@ if( $_POST['submit'] == 'Show me the loot!' )
 		}
 		
 		// load clan, parse log, wish list, & loot
-		$clan = new Clan( CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_actions.txt', CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_divers.txt' );
-
+		// rename session var for easy access; NOTE THAT $clan IS A REFERENCE TO $_SESSION['clan']
+		$clan = $_SESSION['clan'];
+		
 		$clan->ProcessLog( $log_raw );
 		$clan->ProcessWishList( $wish_list_raw );
 		$loot = process_loot( $loot_raw );
