@@ -13,6 +13,13 @@ class Files
 	{
 		$filt = array();
 
+		// verify that file exists; if not, create it
+		if( !file_exists( $filename ) )
+		{
+			$fid = fopen( $filename, 'xb' );
+			fclose( $fid );
+		}	
+		
 		$raw = file( $filename );
 		foreach( $raw as $line )
 		{
