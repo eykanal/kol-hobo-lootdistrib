@@ -29,18 +29,14 @@ class Clan extends Files
 	//
 	// read diverFile, actionFile
 	//
-	function __construct( $actionFile, $diverFile = null )
+	function __construct( $clan_name )
 	{
 		// load actionFile
-		$this->actionFile = $actionFile;
-		$this->actions = $this->LoadActions( $actionFile );
+		$this->actionFile = CLAN_FILES.'/'.$clan_name.'/'.$clan_name.'_actions.txt';
+		$this->actions = $this->LoadActions( $this->actionFile );
 	
-		// load diverFile, if present
-		if( !is_null( $diverFile ) )
-		{
-			$this->diverFile = $diverFile;
-			$this->LoadDivers( $this->diverFile );
-		}
+		$this->diverFile = CLAN_FILES.'/'.$clan_name.'/'.$clan_name.'_divers.txt';
+		$this->LoadDivers( $this->diverFile );
 	}
 	
 	//
@@ -139,6 +135,7 @@ class Clan extends Files
 	function SaveDivers()
 	{
 		$tmp = array();
+
 		foreach( $this->divers as $diver )
 		{
 			$tmp[] = array(
@@ -147,8 +144,8 @@ class Clan extends Files
 						$diver->lastActiveDate,
 					);
 		}
-		
-		$this->wrote( $this->diverFile, $tmp );
+
+		$this->write( $this->diverFile, $tmp );
 	}
 
 	//
