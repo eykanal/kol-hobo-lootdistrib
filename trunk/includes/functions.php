@@ -25,6 +25,18 @@ function obj_array_search( $needle, $haystack, $obj_property, $case_sensitive = 
 	return false;
 }
 
+// search for a subitem in a multidimensional array (e.g., in array "a=>(b=>(w,x), c=>(y,z))", 
+// look for "x" under the "b" branch)
+function in_nested_array( $needle, $array, $nested_name )
+{
+	foreach( $array as $key=>$item )
+	{
+		if( $item[$nested_name] == $needle )
+			return true;
+	}
+	return false;
+}
+
 // print array, with nice typesetting
 function debug_array( $var_name )
 {
