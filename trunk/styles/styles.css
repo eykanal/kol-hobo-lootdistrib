@@ -41,6 +41,11 @@ textarea {
 	height: 60px;
 }
 
+.notice {
+	border: 2px solid #99ffff;
+	background: #ddfffff;
+}
+
 /********************/
 /* format tab areas */
 /********************/
@@ -52,6 +57,7 @@ textarea {
 .shaded .name,
 .shaded .points,
 .shaded .activeDate	{ background-color: #eeeeee; }
+
 .header {
 	background-color: #dddddd;
 	font-weight: bold;
@@ -124,5 +130,3 @@ textarea {
 #loot_results .shaded .fade {color: #808080; }
 
 #loot_results .text ul { margin: 0 0 0 20px; }
-
-ul
