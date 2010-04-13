@@ -5,7 +5,7 @@
 	<div class="tabbertab" title="Current Points">
 {if count($divers)==0}There are no points allocated as of yet.{else}
 		<div class='diver header'><div class='name'>Diver Name</div><div class='points'>Saved Points</div><div class='activeDate'>Date of Last Activity</div></div>
-{foreach from=$divers item=m name=divers}		<div class='diver{if $smarty.foreach.divers.index%2 == 1} shaded{/if}{if $smarty.foreach.divers.last} last{/if}'><div class='name'>{$m->name}</div><div class='points'>{$m->oldTurns}</div><div class='activeDate'>{$m->lastActiveDate}</div></div>
+{foreach from=$divers item=m name=divers}		<div class='diver{if $smarty.foreach.divers.index%2 == 1} shaded{/if}{if $smarty.foreach.divers.last} last{/if}'><div class='name'>{$m->name}</div><div class='points'>{$m->oldTurns}</div><div class='activeDate'>{$m->lastActiveDate|date_format}</div></div>
 {/foreach}
 {/if}
 	</div>
