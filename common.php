@@ -32,4 +32,16 @@ $smarty->cache_dir = dirname( __FILE__ ).'/includes/smarty/cache';
 $smarty->config_dir = dirname( __FILE__ ).'/includes/smarty/config';
 $smarty->caching = 0;
 
+// Due to how the $clan var is stored in $_SESSION, reloading this page can cause significant
+// problems. As such, we'll set "$_SESSION['showed_results']" as false at index.php and on
+// processDistrib.php, and true on showResults.php. If its true on load, that means they reloaded, and
+// we send them back to index.php.
+
+
+if( strpos( $_SERVER['SCRIPT_NAME'], 'showResults' ) )
+	if( $_SESSION['showed_results'] )
+		header( 'Location: index.php' );
+
+$_SESSION['showed_results'] = ( strpos( $_SERVER['SCRIPT_NAME'], 'showResults' ) ) ? true : false;
+
 ?>
