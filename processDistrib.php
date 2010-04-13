@@ -7,7 +7,6 @@ if( !$_SESSION['clan_name'] )
 	header( "Location: index.php" );
 
 $clean = array();
-
 foreach( $_POST as $dirtyLoot=>$dirtyDiver )
 {
 	$clean[] = array( 'loot'  => stripslashes( trim( htmlentities( strip_tags( $dirtyLoot  ) ) ) ),
@@ -15,17 +14,32 @@ foreach( $_POST as $dirtyLoot=>$dirtyDiver )
 				);
 }
 
-$clan = new Clan( CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_actions.txt', CLAN_FILES.'/'.$_SESSION['clan_name'].'/'.$_SESSION['clan_name'].'_divers.txt' );
+// rename session var for easy access; NOTE THAT $clan IS A REFERENCE TO $_SESSION['clan']
+$clan = $_SESSION['clan'];
 
-foreach( $clan->divers as $diver )
+foreach( $clan->divers as $key=>$diver )
 {
-	## REDUCE RECIPIENTS TURNCOUNT TO 0 ##
-	
-	## ADD EVERYONE ELSE'S TURNCOUNT TO SAVED TOTAL ##
-	
-	## SAVE FILE WITH DISTRIB RESULTS ##
-	
-	## SAVE FILENAME OF DISTRIB RESULTS TO $_SESSION SO index.php CAN ACCESS AND DISPLAY IT ##
+	// reduce recipient's turncount to 0
+	if( in_nested_array( $diver->name, $clean, 'diver' ) )
+	{
+		$clan->divers[$key]->turns 		= 0;
+		$clan->divers[$key]->oldTurns 	= 0;
+
+	// for everyone else, add turns dives to saved total 
+	} else
+	{
+		$clan->divers[$key]->oldTurns 	= $diver->oldTurns + $diver->turns;
+		$clan->divers[$key]->turns 		= 0;
+	}
 }
+
+// save turncounts
+$clan->SaveDivers();	
+
+// make results accessible
+$_SESSION['distrib_results'] = $clean;
+
+// send back to front page to display results or whatever
+header( 'Location: index.php' );
 
 ?>
