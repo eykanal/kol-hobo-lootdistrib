@@ -6,8 +6,8 @@
 
 <title>Testing</title>
 
-{literal}<script src="javascript/jquery.js" type="text/javascript"></script>
-<script src="javascript/jquery-ui.js" type="text/javascript"></script>
+{literal}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js" type="text/javascript"></script>
 <script src="javascript/custom.js" type="text/javascript"></script>
 <script src="javascript/tabber.js" type="text/javascript"></script>
 
