@@ -10,8 +10,11 @@
 {/if}
 	</div>
 	<div class="tabbertab" title="Settings">
-		The settings are not yet set up.
-<!--{$settings}-->
+{foreach from=$settings item=loc key=curr_loc}		<div class="loc_name">{$curr_loc}</div>
+			<table>
+{foreach from=$loc item=action}				<tr><td width='300'>{$action.1}</td><td><input type="text" value="{$action.2}" name="action_{$action.0}_value" size='3' maxlength='6'></td><td><input type="text" value="{$action.3}" name="action_{$action.0}_maxturns" size='3' maxlength='3'></td></tr>
+{/foreach}			</table>
+{/foreach}
 	</div>
 	<div class="tabbertab" title="Archive">
 		The archive is not yet set up.

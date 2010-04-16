@@ -19,9 +19,24 @@ if( file_exists( CLAN_FILES.'/'.$clan_name ) )
 	// rename var for easy access; NOTE THAT $clan IS A REFERENCE TO $_SESSION['clan']
 	$clan = $_SESSION['clan'];
 
+	// format the points array so it's more usable by Smarty
+	$settings = array();
+	foreach( $clan->actions as $action )
+	{
+		// check if that item's location has been added to $settings; if not, add it
+		if( !in_array( $action[5], array_keys( $settings ) ) )
+			$settings[$action[5]] = array();
+		
+		// add the action to the appropriate location; (1) 
+		$settings[$action[5]][] = array( $action[0],	// action ID
+										 $action[2],	// name (singular)
+										 $action[4],	// points value
+										 $action[7]	);	// maximum allowed advs
+	}
+
 	// set up some universal smarty variables
 	$smarty->assign( 'divers', $clan->divers );
-	$smarty->assign( 'actions', $clan->actions );
+	$smarty->assign( 'settings', $settings );
 	$smarty->assign( 'form_action_self', $_SERVER['PHP_SELF'] );
 
 // if no files, check in old spot
