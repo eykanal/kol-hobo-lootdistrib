@@ -1,3 +1,0 @@
-clan_name	testing
-min_adv	0
-min_rich	0
