@@ -1,0 +1,1 @@
+A web application created to automate the process of loot distribution in the online MMO game Kingdom of Loathing (kingdomofloathing.com).
